@@ -13,7 +13,8 @@ const useAiHook = () => {
 
             if (newNotes) {
                 const result = await model.generateContent([
-                    "Analyze the following notes. Provide short and simple suggestions, plans, and a summary. If the notes are about expenses or incomes, calculate the totals. If the note includes simple calculations, provide only the result.",
+                    
+                    "Analyze the following notes. Provide short and simple suggestions, plans, and a summary without using stars (*) or hash symbols (#). If the notes are about expenses or incomes, calculate the totals. If the note includes simple calculations, provide only the result.",
                     `${title} : ${note}`
                 ]);
 
