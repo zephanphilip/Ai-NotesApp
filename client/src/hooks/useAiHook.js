@@ -7,7 +7,7 @@ const useAiHook = ()=>{
         const newNotes = `${title} :  ${note}`
         setNotes(newNotes);
         const apiUrl='https://api.openai.com/v1/chat/completions';
-        const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+        const apiKey = process.env.API_KEY;
         const headers = {'Content-Type' : 'application/json',
                          'Authorization' : `Bearer ${apiKey}`
                         }
