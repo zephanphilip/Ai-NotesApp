@@ -1,0 +1,48 @@
+body{
+  background-color: #000000 !important;
+}
+.note-container{
+  margin-top: 65px !important;
+  margin-bottom: 60px !important;
+  background-color: #000000;
+}
+
+.footer {
+  position: fixed !important;
+  margin: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  background-color: #222831d6 !important;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(19px); /* For better browser support */
+  padding: 1rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  position: fixed !important;
+  margin: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  background-color: #222831 !important;
+  padding: 1rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.group-container{
+  background-color: #1c1c1cb6 !important;
+  border-radius: 10px !important;
+  margin-top: 5px !important;
+  color: white !important;;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .group-container{
+    border-radius: 20px !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    margin-top: 5px !important;
+    padding: 3px;
+  }
+}
