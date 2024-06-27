@@ -12,7 +12,7 @@ export const NotesRecordProvider = ({children}) => {
 
     const fetchRecord = async () => {
         if (!user) return;
-        const response = await fetch(`https://ai-notes-app-five.vercel.app/api/notes/${user.id}`)
+        const response = await fetch(`https://ai-notes-app-zephans-projects.vercel.app/api/notes/${user.id}`)
 
         if (response.ok)
             {
@@ -28,7 +28,7 @@ export const NotesRecordProvider = ({children}) => {
     );
 
     const addRecord = async (record) => {
-        const response = await fetch('https://ai-notes-app-five.vercel.app/api/notes',{
+        const response = await fetch('https://ai-notes-app-zephans-projects.vercel.app/api/notes',{
             method: 'POST',
             body: JSON.stringify(record),
             headers: {
@@ -43,7 +43,7 @@ export const NotesRecordProvider = ({children}) => {
     }
 
     const updateRecord = async (id,newRecord) => {
-        const response = await fetch(`https://ai-notes-app-five.vercel.app/api/notes/${id}`,{
+        const response = await fetch(`https://ai-notes-app-zephans-projects.vercel.app/api/notes/${id}`,{
             method: 'PUT',
             body: JSON.stringify(newRecord),
             headers: {
@@ -68,7 +68,7 @@ export const NotesRecordProvider = ({children}) => {
     }
 
     const deleteRecord = async(id) => {
-        const response = await fetch(`https://ai-notes-app-five.vercel.app/api/notes/${id}`,{
+        const response = await fetch(`https://ai-notes-app-zephans-projects.vercel.app/api/notes/${id}`,{
             method : 'DELETE'
         })
         if(response.ok){
