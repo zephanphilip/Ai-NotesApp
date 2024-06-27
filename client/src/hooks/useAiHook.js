@@ -9,7 +9,7 @@ const useAiHook = () => {
             setNotes(newNotes);
 
             if (newNotes) {
-                const response = await fetch('http://localhost:3001/api/ai', {
+                const response = await fetch('https://ai-notes-app-five.vercel.app/api/ai', {
                     method: 'POST',
                     body: JSON.stringify({ notes: newNotes }), // Send data as an object
                     headers: {
