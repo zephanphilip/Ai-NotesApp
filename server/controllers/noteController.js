@@ -60,4 +60,5 @@ const deleteNote = async (req, res) =>{
 }
 
 
+
 module.exports = {getNotes, postNote, updateNote, deleteNote}

@@ -26,13 +26,12 @@ function Dashboard() {
 
   const dateSort = (dateString) => {
     const date =  parseISO(dateString);
-    const isDateToday = isToday(date);
-    if (isDateToday) {
-      return "Today";
-    }
-    else if(differenceInDays(new Date(), date)>0){
+    if(differenceInDays(new Date(), date)>0){
       const daysAgo = differenceInDays(new Date(), date);
       return `${daysAgo} Day${daysAgo !== 1 ? 's' : ''} ago`;
+    }
+    else {
+      return "Today";
     }
   }
 
