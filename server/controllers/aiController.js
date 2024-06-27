@@ -19,7 +19,7 @@ const postAiNotes = async (req, res) => {
 
         const model = await genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
         const result = await model.generateContent([
-            "Analyze the following notes. Provide short and simple suggestions, plans, and a summary . If the notes are about expenses or incomes, calculate the totals. If the note includes simple calculations like 2+2 provide only result like 4, provide only the result. also don't include heading.",
+            "Analyze the following notes. Provide short and simple suggestions, descriptions, plans, and a summary . If the notes are about expenses or incomes, calculate the totals. If the note includes simple calculations like 2+2 provide only result like =4, provide only the result. also don't include heading.",
             note.notes
         ]);
 
